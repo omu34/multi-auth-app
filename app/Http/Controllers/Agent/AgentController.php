@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\calculator;
+namespace App\Http\Controllers\Agent;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class CalculatorController extends Controller
+class AgentController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('agents.agent.index');
     }
 
     /**

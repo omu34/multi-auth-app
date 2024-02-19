@@ -28,11 +28,11 @@ class User extends Authenticatable
         'email',
         'password',
         'role_id',
-        'your_address',
-        'your_phone_number',
+        'business_name',
         'employee_job_id',
-        'employee_name',
+        'employer_name',
         'dealer_name',
+        'agent_name',
         ];
 
     /**

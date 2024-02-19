@@ -46,10 +46,13 @@ class CreateNewUser implements CreatesNewUsers
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
             'role_id' => $input['role_id'],
-            'your_address' => $input['your_address'] ?? null,
-            'your_phone_number' => $input['your_phone_number'] ?? null,
+
+            'business_name' => $input['role_id'] == 2 ? $input['business_name'] : null,
             'employee_job_id' => $input['role_id'] == 3 ? $input['employee_job_id'] : null,
             'employer_name' => $input['role_id'] == 4 ? $input['employer_name'] : null,
+            'dealer_name' => $input['role_id'] == 5 ? $input['dealer_name'] : null,
+            'agent_name' => $input['role_id'] == 6 ? $input['agent_name'] : null,
+
 
         ]);
 

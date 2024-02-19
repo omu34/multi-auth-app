@@ -849,7 +849,8 @@
         <div class="max-w-7xl mx-auto p-6 lg:p-8">
             <div class="flex justify-center">
                 <div class="text-green-600 text-3xl">
-                    <a href="" class="">Calculator</a>
+                    calculator
+                    {{--  <a href="" class="">Calculator</a>  --}}
                 </div>
             </div>
 

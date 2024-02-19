@@ -33,10 +33,12 @@
                 <x-label for="role_id" value="{{ __('Register as:') }}" />
                 <select name="role_id" x-model="role_id" class="block  mt-1 h-10 w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm">
 
-                    <option value="2">Client</option>
+                    <option value="2">Business</option>
                     <option value="3">Employee</option>
                     <option value="4">Employer</option>
                     <option value="5">Dealer</option>
+                    <option value="6">Agent</option>
+
 
 
 
@@ -44,13 +46,8 @@
             </div>
 
             <div class="mt-4" x-show="role_id == 2">
-                <x-label for="your_address" value="{{ __('Your Address') }}" />
-                <x-input id="your_address" class="block mt-1 w-full" type="text" :value="old('your_address')" name="your_address" />
-            </div>
-
-            <div class="mt-4" x-show="role_id == 2">
-                <x-label for="your_phone_number" value="{{ __('Your Phone Number') }}" />
-                <x-input id="your_phone_number" class="block mt-1 w-full" type="text" :value="old('your_phone_number')" name="your_phone_number" />
+                <x-label for="business_name" value="{{ __('Business Name') }}" />
+                <x-input id="business_name" class="block mt-1 w-full" type="text" :value="old('business_name')" name="business_name" />
             </div>
 
             <div class="mt-4" x-show="role_id == 3">
@@ -69,6 +66,11 @@
             <div class="mt-4" x-show="role_id == 5">
                 <x-label for="dealer_name" value="{{ __('Dealer Name') }}" />
                 <x-input id="dealer_name" class="block mt-1 w-full" type="text"  name="dealer_name" />
+
+            </div>
+            <div class="mt-4" x-show="role_id == 6">
+                <x-label for="agent_name" value="{{ __('Agent Name') }}" />
+                <x-input id="agent_name" class="block mt-1 w-full" type="text"  name="agent_name" />
 
             </div>
             {{--  :value="old('employee_job_id')"  --}}

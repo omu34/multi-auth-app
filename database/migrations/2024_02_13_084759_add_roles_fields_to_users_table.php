@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->foreignId('role_id')->constrained();
-            $table->string('your_address')->nullable();
-            $table->string('your_phone_number')->nullable();
+            $table->string('business_name')->nullable();
             $table->string('employee_job_id')->nullable();
-            $table->string('employee_name')->nullable();
+            $table->string('employer_name')->nullable();
             $table->string('dealer_name')->nullable();
+            $table->string('agent_name')->nullable();
+
 
 
 
