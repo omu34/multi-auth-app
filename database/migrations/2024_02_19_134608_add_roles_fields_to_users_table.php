@@ -19,10 +19,6 @@ return new class extends Migration
             $table->string('dealer_name')->nullable();
             $table->string('agent_name')->nullable();
 
-
-
-
-
         });
     }
 
